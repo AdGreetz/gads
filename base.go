@@ -11,7 +11,8 @@ import (
 )
 
 const (
-	baseUrl = "https://adwords.google.com/api/adwords/cm/v201409"
+	baseUrl = "https://adwords.google.com/api/adwords/cm/v201809"
+	rmBaseUrl = "https://adwords.google.com/api/adwords/rm/v201809"
 )
 
 type ServiceUrl struct {
@@ -34,7 +35,7 @@ var (
 	adGroupFeedServiceUrl           = ServiceUrl{baseUrl, "AdGroupFeedService"}
 	adGroupServiceUrl               = ServiceUrl{baseUrl, "AdGroupService"}
 	adParamServiceUrl               = ServiceUrl{baseUrl, "AdParamService"}
-	adwordsUserListServiceUrl       = ServiceUrl{baseUrl, "AdwordsUserListService"}
+	adwordsUserListServiceUrl       = ServiceUrl{rmBaseUrl, "AdwordsUserListService"}
 	biddingStrategyServiceUrl       = ServiceUrl{baseUrl, "BiddingStrategyService"}
 	budgetOrderServiceUrl           = ServiceUrl{baseUrl, "BudgetOrderService"}
 	budgetServiceUrl                = ServiceUrl{baseUrl, "BudgetService"}

@@ -205,7 +205,7 @@ func (s AdwordsUserListService) Get(selector Selector) (userLists []UserList, er
 			Sel     Selector
 		}{
 			XMLName: xml.Name{
-				Space: baseUrl,
+				Space: rmBaseUrl,
 				Local: "get",
 			},
 			Sel: selector,
